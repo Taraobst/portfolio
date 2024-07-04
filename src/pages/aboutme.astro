@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+const pageTitle = "About";
+---
+<Layout pageTitle={pageTitle}>
+    <h2>About</h2>
+<p>
+   Moin!
+
+   Ich bin Tara und studiere derzeit den Medieningenieur/-in an der Fachhochschule Kiel. Schon von klein auf haben mich alle möglichen kreativen Ausdrucksmöglichkeiten begeistert, von Zeichnen bis hin zur Modellierung. 
+   Im Studium habe ich durch das Erlernen von Programmieren  und den Umgang mit verschiedenen Tools und Software die Fähigkeit gewonnen, kreative Ideen umzusetzen.
+Mittlerweile bin ich im sechsten Semester und konnte über die Jahre wertvolle Erfahrungen in Theorie und Praxis sammeln. Besonders begeistert haben mich die Projekte, bei denen ich visuellen Output in Form von 3D-Modellierung, Front-End-Entwicklung, Raumkonzeption und Game-Design beitragen konnte. Besonders fasziniert mich die Verbindung dieser kreativen Arbeiten mit innovativen Benutzeroberflächen.
+Ich habe besonderes Interesse an der Entwicklung von Mixed-Reality-Anwendungen sowie mobilen und Web-Anwendungen.
+</p>
+<p>
+
+</p>
+<div class="center">
+    <a href="/TaraObersteller_Lebenslauf.pdf" download>
+        <button class="btn">Lebenslauf</button>
+    </a>
+</div>
+<h2>
+Kontakt
+</h2>
+<p>
+    Wenn Sie Fragen haben, kontaktieren Sie mich gerne.
+</p>
+
+<div class="contact-info">
+    <div class="contact-item">
+        <img src="/phone.png" alt="Phone Icon" class="icon">
+        <span>+49 175 280 75 85</span>
+    </div>
+    <div class="contact-item">
+        <img src="/email.png" alt="Email Icon" class="icon">
+        <span>taraobersteller21@gmail.com</span>
+    </div>
+</div>
+</Layout>
+
+<style>
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.contact-item .icon {
+    margin-right: 10px;
+    width: 24px; /* Icon width */
+    height: 24px; /* Icon height */
+}
+
+.contact-item > span {
+    font-family: "Cabinet";
+}
+</style>
+

@@ -1,0 +1,21 @@
+---
+import BaseLayout from './Layout.astro';
+const { frontmatter } = Astro.props;
+---
+<BaseLayout pageTitle={frontmatter.title}>
+   
+    <h2>{frontmatter.title}</h2>
+    <slot />
+    <ul class="badge__list">
+        {frontmatter.platform && ( <li><span class="badge badge--item">PLATFORM</span>{frontmatter.platform}</li>)}
+        <li><span class="badge badge--item">STACK</span>{frontmatter.stack}</li>
+
+        {frontmatter.github && (<li><span class="badge badge--item">GITHUB</span><a class="badge__link" href={frontmatter.github} target="_blank">{frontmatter.github}</a></li>)}
+    </ul>
+    <div class="center">
+        {frontmatter.worksImage1 && (<img class="pro-img" width="500px" height="281" src={frontmatter.worksImage1.url} alt={frontmatter.worksImage1.alt} />)}
+        {frontmatter.worksVideo1 && (<video class="pro-img" width="500px" height="281" src={frontmatter.worksVideo1.url} controls></video>)}
+        {frontmatter.worksImage2 && (<img class="pro-img" width="500px" height="281" src={frontmatter.worksImage2.url} alt={frontmatter.worksImage2.alt} />)}
+    </div>
+</BaseLayout>
+

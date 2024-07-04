@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+const pageTitle = "Portfolio";
+---
+<Layout pageTitle={pageTitle}>
+    <div class="gif">
+        <img id="logo" width="500" height="520" alt="RaccoonSpaceGif" src="/tobst_coffee.gif"/>
+    </div>
+    <h1>Tara Obersteller</h1>
+    <span class="badge">Digital Crafty Adventurer (Developer)</span>
+    <h2>Welcome</h2>
+    <p> Herzlich willkommen in meinem Portfolio! Hier finden Sie eine Auswahl von Projekten, 
+        die ich während meines Studiums realisiert habe. Wenn Sie Interesse an einer Zusammenarbeit
+         haben, kontaktieren Sie mich gerne.
+         Besuchen Sie auch die anderen Seiten, um mehr über mich zu erfahren.
+
+    </p>
+    <p>
+        
+    </p>
+    <div class="center">
+        <a href="/works/">
+            <button class="btn">Portfolio</button>
+        </a>
+    </div>
+    <h2>Skills</h2>
+    <div class="skills center">
+        <img class="skills__img" width="46" height="46" alt="C#" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"/>
+        <img class="skills__img" width="46" height="46" alt="Unity" src="/unity.png"/>
+        <img class="skills__img" width="46" height="46" alt="python" src="/Python Icon.png"/>
+        <img class="skills__img" width="46" height="46" alt="Flutter" src="/Flutter Icon.png"/>
+        <img class="skills__img" width="46" height="46" alt="Figma" src="/Figma Logo.png"/>
+        <img class="skills__img" width="46" height="46" alt="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
+        <img class="skills__img" width="46" height="46" alt="HTML" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>
+        <img class="skills__img" width="46" height="46" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
+        <img class="skills__img" width="46" height="46" alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"/>
+    </div>
+
+</Layout>
+
+
+<style>
+    /* #logo {
+        margin-top: -80px;
+    } */
+
+     h1, .badge {
+        text-align: center;
+     }
+
+     .badge {
+        display: flex;
+        justify-content: center;
+        max-width: fit-content;
+        margin: 16px auto;
+     }
+</style>
